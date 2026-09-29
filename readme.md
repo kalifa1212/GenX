@@ -480,7 +480,7 @@ Le projet est développé en **Java** et utilise notamment :
 
 # HForge
 
-**GenX** est un projet développé et maintenu par **HForge**.
+**GenX** est un projet parmi d'autre développé et maintenu par **HForge**.
 
 > **GenX — Generate. Extract. Transform.**
 
