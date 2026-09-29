@@ -1,0 +1,31 @@
+project:
+  name: User Library
+  groupId: com.hforge
+  artifactId: user-library
+  version: 1.0.0
+  basePackage: com.kalifa.user
+  outputDirectory: D:/generated
+entities:
+services:
+enums:
+
+  - name: UserRole
+    values:
+      - ADMIN
+      - USER
+      - MANAGER
+      - GUEST
+
+  - name: Gender
+    values:
+      - MALE
+      - FEMALE
+      - OTHER
+
+  - name: UserStatus
+    values:
+      - ACTIVE
+      - INACTIVE
+      - BLOCKED
+      - DELETED
+dto:
