@@ -1,5 +1,6 @@
 package com.hforge;
 
+import com.hforge.clean.NettoyerCSV;
 import com.hforge.config.CommandLineParser;
 import com.hforge.config.GeneratorConfig;
 import com.hforge.config.GeneratorOptions;
@@ -10,12 +11,13 @@ import com.hforge.generator.engine.FreeMarkerTemplateEngine;
 import com.hforge.generator.engine.TemplateEngine;
 import com.hforge.parser.YamlParser;
 
+import java.io.IOException;
 import java.util.Set;
 
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         CommandLineParser cli = new CommandLineParser();
 
@@ -29,6 +31,13 @@ public class Main {
 
             new MosqueExtractor()
                     .extract(options);
+
+        }
+//                netoyage de csv
+        if (types.contains("clean")) {
+
+            NettoyerCSV netoyer =new NettoyerCSV(options);
+            netoyer.nettoyer();
 
         }
 

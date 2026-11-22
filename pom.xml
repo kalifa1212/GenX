@@ -37,6 +37,12 @@
             <artifactId>osm4j-pbf</artifactId>
             <version>1.3.0</version>
         </dependency>
+<!--            csv-->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-csv</artifactId>
+            <version>1.14.1</version>
+        </dependency>
 
         <!-- Lecture du YAML -->
         <dependency>

@@ -331,19 +331,19 @@ public class MosqueExtractor extends AbstractExtractor<Mosque> {
         m.setOsmId(id);
         m.setName(tags.get("name"));
         m.setNameFr(tags.get("name:fr"));
-        m.setNameEn(tags.get("name:en"));
+      //  m.setNameEn(tags.get("name:en"));
         m.setNameAr(tags.get("name:ar"));
         m.setAltName(tags.get("alt_name"));
-        m.setDenomination(tags.get("denomination"));
+     //   m.setDenomination(tags.get("denomination"));
         m.setBuilding(tags.get("building"));
         m.setCity(tags.get("addr:city"));
         m.setStreet(tags.get("addr:street"));
-        m.setHouseNumber(tags.get("addr:housenumber"));
-        m.setPostcode(tags.get("addr:postcode"));
-        m.setPhone(firstNonNull(tags.get("phone"), tags.get("contact:phone")));
-        m.setWebsite(firstNonNull(tags.get("website"), tags.get("contact:website")));
-        m.setOpeningHours(tags.get("opening_hours"));
-        m.setWikidata(tags.get("wikidata"));
+       // m.setHouseNumber(tags.get("addr:housenumber"));
+        //m.setPostcode(tags.get("addr:postcode"));
+        //m.setPhone(firstNonNull(tags.get("phone"), tags.get("contact:phone")));
+      //  m.setWebsite(firstNonNull(tags.get("website"), tags.get("contact:website")));
+       // m.setOpeningHours(tags.get("opening_hours"));
+       // m.setWikidata(tags.get("wikidata"));
 
         return m;
     }

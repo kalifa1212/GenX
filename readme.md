@@ -269,7 +269,14 @@ java -jar target/genx-1.0-SNAPSHOT.jar ^
   --output mosques_cameroun.csv ^
   --verbose
 ```
+### Clean CSV
 
+```cmd
+java -jar target/genx-1.0-SNAPSHOT.jar ^
+  --type clean ^
+  --input cameroon-latest.csv
+
+```
 ### Désactiver le filtre géographique
 
 Pour analyser les données sans appliquer le rectangle géographique du Cameroun :
